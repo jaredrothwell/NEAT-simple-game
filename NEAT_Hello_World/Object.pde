@@ -24,6 +24,10 @@ class Object {
     
   }
   
+  boolean CheckWalls(Object other) {
+    return false;
+  }
+  
   void CheckCollision(Object other) {
     
   }

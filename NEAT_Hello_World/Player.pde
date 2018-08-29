@@ -25,6 +25,12 @@ class Player extends Object{
     }
   }
   
+  boolean CheckWalls(Object other) {
+    if(distance(position.y, other.position.y, H, other.H) && distance(position.x, other.position.x, W, other.W))
+      return true;
+    return false;
+  }
+  
   boolean distance(float a, float b, float z1, float z2) {
     float c = a - b;
     float z = (z1 + z2)/2;
